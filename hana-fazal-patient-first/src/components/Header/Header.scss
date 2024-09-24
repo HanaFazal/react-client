@@ -1,0 +1,65 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #6360ff;
+    &__content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    &__logo {
+        margin: 0 auto;
+        width: 10rem;
+        height: 5rem;
+    }
+
+    &__search {
+        display:flex;
+        justify-content: center;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 60px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        height: 60px;
+        &-div{
+            display: flex;
+            position: relative;
+        }
+        &-icon{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 50px;
+        }
+    }
+
+    &__title{
+        color: white;
+        font-weight: 600;
+    }
+
+    &__stethescope{
+        width: 60px;
+        background-color: rgba(255,255,255,0.5);
+        padding: 5px;
+        border-radius: 10px;
+    }
+    &__menu-burger{
+        width: 50px;
+        filter: invert(100%) sepia(100%) saturate(19%) hue-rotate(303deg) brightness(104%) contrast(104%); //https://isotropic.co/tool/hex-color-to-css-filter/#google_vignette
+    }
+}

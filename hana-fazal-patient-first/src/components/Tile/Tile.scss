@@ -1,0 +1,18 @@
+.tile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  margin: 50px;
+  box-shadow: 10px 10px 10px lightgray;
+  border-radius: 20px;
+  background-color: white;
+  width: 65ch;
+  &-header {
+    width: 20ch;
+  }
+  &-image {
+    width: 150px;
+  }
+}

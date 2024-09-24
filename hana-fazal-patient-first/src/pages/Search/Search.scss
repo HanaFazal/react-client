@@ -1,0 +1,15 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1fa ;
+    &__filters{
+
+    }
+    &__pill{
+        background-color: #6360fe;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+    }
+}
